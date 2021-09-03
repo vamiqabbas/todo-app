@@ -1,0 +1,15 @@
+<br>
+<h4 class="bg-warning">Add a Todo</h4>
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label bg-info">Todo Title</label>
+      <input [(ngModel)]="title" class="form-control" id="title" aria-describedby="emailHelp"[ngModelOptions]="{standalone:true}">
+      
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label bg-info">Description</label>
+      <input type="text" class="form-control" id="desc"[(ngModel)]="desc"[ngModelOptions]="{standalone:true}">
+    </div>
+   
+    <button type="submit" class="btn btn-sm">Add TODO</button>
+  </form>
